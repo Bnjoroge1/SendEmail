@@ -8,6 +8,7 @@ import pyinputplus as pypi
 def send_mail(text = send_msg(), subject = subject, 
     from_email = user_email , to_email = [email_input],
     html = None):
+    import maya
     while True:
         assert isinstance(to_email, list)                            #Check if it's a string otherwie, return assertion error
         msg = MIMEMultipart("alternative")
